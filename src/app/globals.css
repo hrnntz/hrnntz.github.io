@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAF9F6;
+  --foreground: #1A1A1A;
+  --border-color: #E5E5E5;
+  --accent: #00509E;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border-color);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-ibm-plex-sans), sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono); /* Using Mono as default body as per request: IBM Plex Mono (cuerpo/detalles) */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans); /* IBM Plex Sans para títulos */
+}
