@@ -12,6 +12,7 @@ export default function Footer() {
             <a 
               href="mailto:hola@hrnntz.me" 
               className="hover:text-accent focus-visible:underline outline-none underline-offset-4"
+              aria-label="Enviar correo a Hernán"
             >
               Email
             </a>
@@ -22,6 +23,7 @@ export default function Footer() {
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-accent focus-visible:underline outline-none underline-offset-4"
+              aria-label="Perfil de GitHub de Hernán"
             >
               GitHub
             </a>

@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "StreamHub",
   description: "Implementación técnica de StreamHub: App web de streaming multideporte.",
+  alternates: {
+    canonical: '/projects/streamhub',
+  },
 };
 
 export default function StreamHubPage() {

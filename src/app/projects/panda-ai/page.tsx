@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "PandaAI",
   description: "Implementación técnica de PandaAI: App móvil con IA para niños.",
+  alternates: {
+    canonical: '/projects/panda-ai',
+  },
 };
 
 export default function PandaAIPage() {

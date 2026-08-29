@@ -1,5 +1,13 @@
+
 import ProjectCard from "@/components/project-card";
 import SkillsList from "@/components/skills-list";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function Home() {
   return (
@@ -53,6 +61,7 @@ export default function Home() {
             <a 
               href="mailto:hola@hrnntz.me"
               className="text-sm font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4"
+              aria-label="Enviar correo a Hernán"
             >
               Email
             </a>
@@ -61,6 +70,7 @@ export default function Home() {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4"
+              aria-label="Perfil de GitHub de Hernán"
             >
               GitHub
             </a>
