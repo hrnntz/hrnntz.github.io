@@ -1,6 +1,7 @@
 
 import ProjectCard from "@/components/project-card";
 import SkillsList from "@/components/skills-list";
+import ContactForm from "@/components/contact-form";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -56,25 +57,24 @@ export default function Home() {
         <p className="text-foreground/80 max-w-xl leading-relaxed">
           Puedes contactarme para consultas técnicas o si buscas a alguien para un proyecto freelance.
         </p>
-        <div className="flex flex-wrap items-center gap-6 pt-2">
-          <div className="flex items-center space-x-6">
-            <a 
-              href="mailto:hola@hrnntz.me"
-              className="text-sm font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4"
-              aria-label="Enviar correo a Hernán"
-            >
-              Email
-            </a>
-            <a 
-              href="https://github.com/hrnntz"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4"
-              aria-label="Perfil de GitHub de Hernán"
-            >
-              GitHub
-            </a>
-          </div>
+        <ContactForm />
+        <div className="flex items-center space-x-6 pt-2">
+          <a
+            href="mailto:hola@hrnntz.me"
+            className="text-sm font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4"
+            aria-label="Enviar correo a Hernán"
+          >
+            Email
+          </a>
+          <a
+            href="https://github.com/hrnntz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4"
+            aria-label="Perfil de GitHub de Hernán"
+          >
+            GitHub
+          </a>
         </div>
       </section>
     </div>

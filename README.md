@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# hrnntz.me
 
-## Getting Started
+Portafolio personal. Next.js 16, React 19, Tailwind CSS v4, desplegado en Vercel.
 
-First, run the development server:
+## Stack
+
+| Capa | Tecnología |
+|------|-----------|
+| Framework | Next.js 16 (App Router) |
+| UI | React 19 + Tailwind CSS v4 |
+| Email | Resend |
+| Analytics | Vercel Analytics |
+| CI | GitHub Actions (type-check + lint + build) |
+| Deploy | Vercel (Edge Network) |
+
+## Desarrollo local
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Variables de entorno (solo necesarias para el formulario de contacto)
+cp .env.example .env.local
+# editar .env.local y agregar RESEND_API_KEY
+
+# Servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La app corre en `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Variables de entorno
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Descripción |
+|----------|-------------|
+| `RESEND_API_KEY` | API key de [Resend](https://resend.com). Requerida para el formulario de contacto. |
 
-## Learn More
+En producción, se configura en Vercel → Settings → Environment Variables.
 
-To learn more about Next.js, take a look at the following resources:
+## Estructura
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/
+│   ├── api/contact/     # Route Handler — procesa el formulario y llama a Resend
+│   ├── projects/        # Páginas de proyectos individuales
+│   ├── layout.tsx
+│   └── page.tsx
+└── components/
+    ├── contact-form.tsx
+    ├── footer.tsx
+    ├── header.tsx
+    ├── project-card.tsx
+    └── skills-list.tsx
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## CI
 
-## Deploy on Vercel
+El workflow en `.github/workflows/ci.yml` corre en cada push y PR a `main`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. `tsc --noEmit` — verificación de tipos
+2. `eslint` — linting
+3. `next build` — build de producción
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licencia
+
+MIT
