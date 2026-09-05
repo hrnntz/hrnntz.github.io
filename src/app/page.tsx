@@ -22,7 +22,7 @@ export default function Home() {
           </p>
         </div>
         <p className="text-foreground/80 max-w-2xl leading-relaxed">
-          Estoy en segundo semestre de Ingeniería de Sistemas en la Universidad de Córdoba. Trabajo con TypeScript, React y Node.js construyendo aplicaciones full-stack. Tengo paquetes publicados en npm (agy-mcp, agy-skills), hablo inglés a nivel C1, y busco oportunidades junior o de pasantía.
+          Estoy en segundo semestre de Ingeniería de Sistemas en la Universidad de Córdoba. Trabajo con TypeScript, React y Node.js construyendo aplicaciones full-stack. Tengo paquetes publicados en npm (antigravity-mcp-installer, antigravity-skills-installer), hablo inglés a nivel C1, y busco oportunidades junior o de pasantía.
         </p>
       </section>
 

@@ -34,7 +34,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Open Source & CI/CD",
     skills: [
-      { name: "npm Publishing", evidence: "Dos paquetes publicados en el registro público de npm (agy-mcp, agy-skills)." },
+      { name: "npm Publishing", evidence: "Dos paquetes publicados en el registro público de npm (antigravity-mcp-installer, antigravity-skills-installer)." },
       { name: "GitHub Actions", evidence: "Matrices CI/CD multi-plataforma (Linux/Windows) con tests automatizados." },
       { name: "node:test", evidence: "Suites de tests unitarios usando el test runner nativo de Node.js." },
     ],
