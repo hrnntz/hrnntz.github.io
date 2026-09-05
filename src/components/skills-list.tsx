@@ -20,15 +20,15 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "PostgreSQL & TypeORM", evidence: "Modelado relacional y API REST implementada para PandaAI." },
       { name: "Supabase (Auth, RLS, Realtime)", evidence: "Sincronización segura de estados y notificaciones en StreamHub." },
-      { name: "Node.js & Express", evidence: "Orquestación del backend y endpoints de PandaAI." },
+      { name: "Node.js & Express", evidence: "Desarrollo de la API REST y eventos WebSocket para PandaAI." },
     ],
   },
   {
     title: "Infraestructura & Integración",
     skills: [
       { name: "Vercel Serverless", evidence: "Despliegue y ejecución de funciones asíncronas en StreamHub." },
-      { name: "Render & Neon", evidence: "Hosting de backend y base de datos serverless para PandaAI." },
-      { name: "Networking (adb reverse)", evidence: "Resolución de aislamiento de red durante pruebas locales en Android." },
+      { name: "Render & Neon", evidence: "Despliegue del backend en Render y base de datos PostgreSQL en Neon." },
+      { name: "Networking (adb reverse)", evidence: "Túnel USB con adb reverse para conectar el móvil físico a la API local." },
     ],
   },
   {

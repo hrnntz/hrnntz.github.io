@@ -8,7 +8,7 @@ export default function Header() {
           <Link href="/" className="font-sans font-bold text-xl hover:text-accent focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:ring-accent outline-none">
             Hernán Arteaga
           </Link>
-          <p className="text-sm mt-1 text-foreground/80">Estudiante de Ingeniería de Sistemas / Software Engineer</p>
+          <p className="text-sm mt-1 text-foreground/80">Estudiante de Ingeniería de Sistemas | Full-Stack Developer</p>
         </div>
         <nav>
           <ul className="flex items-center space-x-6 text-sm font-medium">

@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <section className="space-y-8" id="projects">
-        <h2 className="font-sans text-2xl font-semibold tracking-tight">Proyectos en Producción</h2>
+        <h2 className="font-sans text-2xl font-semibold tracking-tight">Proyectos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard 
             title="StreamHub"
@@ -39,14 +39,14 @@ export default function Home() {
           <ProjectCard 
             title="PandaAI"
             slug="panda-ai"
-            description="App móvil con inteligencia artificial conectada a una API REST relacional."
+            description="App móvil con interacción por voz (IA), control parental y backend en Node.js."
             stack={["React Native", "Node.js", "PostgreSQL"]}
           />
           <div className="md:col-span-2">
             <ProjectCard 
               title="Antigravity CLI Tooling"
               slug="antigravity-cli"
-              description="Herramientas CLI open-source publicadas en npm para configurar servidores MCP y skills de agentes IA."
+              description="Gestores de paquetes por terminal publicados en npm para instalar y auditar herramientas de IA."
               stack={["Node.js", "npm Registry", "GitHub Actions"]}
             />
           </div>

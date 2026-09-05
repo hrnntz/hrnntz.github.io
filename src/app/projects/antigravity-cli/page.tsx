@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Antigravity CLI Tooling",
-  description: "Implementación técnica de Antigravity CLI Tooling: Herramientas CLI open-source para configuración de agentes IA.",
+  description: "Detalles técnicos de Antigravity CLI Tooling: Herramientas CLI open-source para configurar agentes IA.",
   alternates: {
     canonical: '/projects/antigravity-cli',
   },
@@ -21,13 +21,13 @@ export default function AntigravityCliPage() {
           <span className="text-foreground">antigravity-cli</span>
         </div>
         <h1 className="font-sans text-3xl font-bold tracking-tight">Antigravity CLI Tooling</h1>
-        <p className="text-lg text-foreground/80">Herramientas CLI open-source para configuración de agentes IA</p>
+        <p className="text-lg text-foreground/80">Herramientas de terminal open-source para instalar y auditar herramientas de IA</p>
       </header>
 
       <section className="space-y-4">
         <h2 className="font-sans text-xl font-semibold border-b border-border-color pb-2">El Problema</h2>
         <p className="text-foreground/80 leading-relaxed">
-          Configurar servidores MCP y habilidades de agentes para Antigravity CLI requiere editar manualmente archivos de configuración JSON, encontrar los paquetes correctos y verificar vulnerabilidades de seguridad. Construí estas herramientas CLI para automatizar y asegurar ese proceso desde la terminal.
+          Configurar servidores MCP o habilidades en Antigravity CLI suele requerir buscar repositorios a mano, editar archivos JSON de configuración y adivinar si el paquete que estás instalando tiene dependencias vulnerables. Creé dos herramientas CLI interactivas para buscar, auditar vulnerabilidades y configurar todo directamente desde la terminal.
         </p>
       </section>
 
@@ -47,23 +47,23 @@ export default function AntigravityCliPage() {
         
         <div className="space-y-6">
           <div>
-            <h3 className="font-sans font-semibold mb-2">1. Registro y Descubrimiento de Paquetes</h3>
+            <h3 className="font-sans font-semibold mb-2">1. Búsqueda Interactiva y Configuración Automática</h3>
             <p className="text-foreground/80 leading-relaxed text-sm">
-              Implementé una búsqueda interactiva que consulta el registro de npm y la API de skills.sh, presenta los resultados con metadatos estructurados y maneja la instalación y configuración automáticamente en el sistema del usuario.
+              Construí un asistente interactivo en terminal con Inquirer y Commander. El CLI consulta el registro de npm y la API de skills.sh, muestra descripciones y versiones en vivo, y escribe la configuración requerida en los archivos JSON locales del usuario sin necesidad de edición manual.
             </p>
           </div>
 
           <div>
-            <h3 className="font-sans font-semibold mb-2">2. Auditoría de Seguridad en Tiempo Real</h3>
+            <h3 className="font-sans font-semibold mb-2">2. Auditoría de Seguridad con Google OSV</h3>
             <p className="text-foreground/80 leading-relaxed text-sm">
-              Cada paquete es analizado contra la base de datos de vulnerabilidades OSV de Google (api.osv.dev) antes de su instalación, mostrando detalles de CVE directamente en la consola para garantizar la seguridad de los agentes IA.
+              Antes de confirmar la instalación de cualquier herramienta, el CLI consulta la base de datos abierta de vulnerabilidades de Google (api.osv.dev). Si existen CVEs reportados para ese paquete, muestra el detalle y la gravedad en consola para alertar al usuario antes de ejecutar código externo.
             </p>
           </div>
 
           <div>
-            <h3 className="font-sans font-semibold mb-2">3. Testing y CI/CD Multi-plataforma</h3>
+            <h3 className="font-sans font-semibold mb-2">3. Pruebas Nativas y CI/CD Multi-Plataforma</h3>
             <p className="text-foreground/80 leading-relaxed text-sm">
-              Escribí suites de pruebas unitarias con el test runner nativo de Node.js (node:test) y configuré flujos de trabajo en una matriz de GitHub Actions para verificar compatibilidad cruzada entre entornos Linux y Windows.
+              En lugar de agregar dependencias pesadas de testing, escribí la suite de pruebas unitarias con el módulo nativo <code>node:test</code> de Node.js. Configuré GitHub Actions con una matriz para ejecutar los tests automáticamente en Linux y Windows en cada commit o pull request.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function AntigravityCliPage() {
 
       <section className="space-y-4 pt-8 border-t border-border-color">
         <p className="text-foreground/80 text-sm">
-          Publicados en npm como <a href="https://www.npmjs.com/package/antigravity-mcp-installer" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4">antigravity-mcp-installer</a> y <a href="https://www.npmjs.com/package/antigravity-skills-installer" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4">antigravity-skills-installer</a> (comandos <code>agy-mcp</code> y <code>agy-skills</code>). Código fuente en <a href="https://github.com/hrnntz/antigravity-mcp-installer" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4">GitHub</a>.
+          Publicados en npm como <a href="https://www.npmjs.com/package/antigravity-mcp-installer" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4">antigravity-mcp-installer</a> y <a href="https://www.npmjs.com/package/antigravity-skills-installer" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4">antigravity-skills-installer</a> (comandos de terminal <code>agy-mcp</code> y <code>agy-skills</code>). Código en <a href="https://github.com/hrnntz/antigravity-mcp-installer" target="_blank" rel="noopener noreferrer" className="text-foreground font-medium hover:text-accent focus-visible:underline outline-none underline-offset-4">GitHub</a>.
         </p>
       </section>
     </article>

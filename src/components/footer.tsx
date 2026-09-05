@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-border-color py-8 mt-auto" id="contact">
       <div className="container mx-auto px-4 max-w-3xl flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm font-mono text-foreground/70">
-          &copy; {new Date().getFullYear()} Hernán Arteaga. Creado con rigor.
+          &copy; {new Date().getFullYear()} Hernán Arteaga. Montería, Colombia.
         </p>
         <ul className="flex items-center space-x-6 text-sm font-medium">
           <li>
