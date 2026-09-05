@@ -5,14 +5,14 @@ export default function Footer() {
     <footer className="border-t border-border-color py-8 mt-auto" id="contact">
       <div className="container mx-auto px-4 max-w-3xl flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm font-mono text-foreground/70">
-          &copy; {new Date().getFullYear()} Hernán. Creado con rigor.
+          &copy; {new Date().getFullYear()} Hernán Arteaga. Creado con rigor.
         </p>
         <ul className="flex items-center space-x-6 text-sm font-medium">
           <li>
             <a 
               href="mailto:hola@hrnntz.me" 
               className="hover:text-accent focus-visible:underline outline-none underline-offset-4"
-              aria-label="Enviar correo a Hernán"
+              aria-label="Enviar correo a Hernán Arteaga"
             >
               Email
             </a>
@@ -23,9 +23,20 @@ export default function Footer() {
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-accent focus-visible:underline outline-none underline-offset-4"
-              aria-label="Perfil de GitHub de Hernán"
+              aria-label="Perfil de GitHub de Hernán Arteaga"
             >
               GitHub
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://linkedin.com/in/hrnntz" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-accent focus-visible:underline outline-none underline-offset-4"
+              aria-label="Perfil de LinkedIn de Hernán Arteaga"
+            >
+              LinkedIn
             </a>
           </li>
         </ul>

@@ -20,32 +20,34 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hrnntz.me"),
   title: {
-    default: "Hernán | Estudiante de Ingeniería de Sistemas",
-    template: "%s | Hernán",
+    default: "Hernán Arteaga | Desarrollador Full-Stack & Estudiante de Ingeniería de Sistemas",
+    template: "%s | Hernán Arteaga",
   },
-  description: "Portafolio técnico de Hernán. Proyectos web y móviles construidos con React, Node.js y bases de datos relacionales.",
+  description: "Portafolio técnico de Hernán Arteaga. Proyectos web y móviles construidos con React, Node.js y bases de datos relacionales. Tengo paquetes publicados en npm y hablo inglés a nivel C1.",
   openGraph: {
-    title: "Hernán | Estudiante de Ingeniería de Sistemas",
-    description: "Portafolio técnico de Hernán. Proyectos web y móviles construidos con React, Node.js y bases de datos relacionales.",
+    title: "Hernán Arteaga | Desarrollador Full-Stack & Estudiante de Ingeniería de Sistemas",
+    description: "Portafolio técnico de Hernán Arteaga. Proyectos web y móviles construidos con React, Node.js y bases de datos relacionales. Tengo paquetes publicados en npm y hablo inglés a nivel C1.",
     url: "https://hrnntz.me",
-    siteName: "Hernán Portfolio",
+    siteName: "Hernán Arteaga Portfolio",
     locale: "es_CO",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hernán | Estudiante de Ingeniería de Sistemas",
-    description: "Portafolio técnico de Hernán. Proyectos web y móviles construidos con React, Node.js y bases de datos relacionales.",
+    title: "Hernán Arteaga | Desarrollador Full-Stack & Estudiante de Ingeniería de Sistemas",
+    description: "Portafolio técnico de Hernán Arteaga. Proyectos web y móviles construidos con React, Node.js y bases de datos relacionales. Tengo paquetes publicados en npm y hablo inglés a nivel C1.",
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Hernán",
+  name: "Hernán Arteaga",
+  jobTitle: "Software Engineer",
   url: "https://hrnntz.me",
   sameAs: [
-    "https://github.com/hrnntz"
+    "https://github.com/hrnntz",
+    "https://linkedin.com/in/hrnntz"
   ],
   affiliation: {
     "@type": "CollegeOrUniversity",

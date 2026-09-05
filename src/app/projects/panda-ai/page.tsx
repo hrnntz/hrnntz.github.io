@@ -27,7 +27,7 @@ export default function PandaAIPage() {
       <section className="space-y-4">
         <h2 className="font-sans text-xl font-semibold border-b border-border-color pb-2">El Problema</h2>
         <p className="text-foreground/80 leading-relaxed">
-          Desarrollar un cliente móvil interactivo enfocado en usuarios infantiles requería un ecosistema concurrente: desde el manejo de interfaces fluidas en el dispositivo hasta la persistencia de perfiles de usuario en el servidor. El desafío de infraestructura radicaba en conectar el entorno móvil (React Native) con un backend relacional transaccional y desplegarlo en un entorno serverless optimizado en costos.
+          Este proyecto de innovación universitario, desarrollado en colaboración con un equipo, requería un ecosistema concurrente: desde el manejo de interfaces fluidas en el dispositivo hasta la persistencia de perfiles de usuario en el servidor. Mi rol se centró en la arquitectura del backend, la integración del pipeline de voz y el desarrollo del cliente móvil. El desafío de infraestructura radicaba en conectar el entorno móvil (React Native) con un backend relacional transaccional y desplegarlo en un entorno serverless optimizado en costos.
         </p>
       </section>
 

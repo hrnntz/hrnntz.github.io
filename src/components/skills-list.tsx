@@ -31,6 +31,14 @@ const skillCategories: SkillCategory[] = [
       { name: "Networking (adb reverse)", evidence: "Resolución de aislamiento de red durante pruebas locales en Android." },
     ],
   },
+  {
+    title: "Open Source & CI/CD",
+    skills: [
+      { name: "npm Publishing", evidence: "Dos paquetes publicados en el registro público de npm (agy-mcp, agy-skills)." },
+      { name: "GitHub Actions", evidence: "Matrices CI/CD multi-plataforma (Linux/Windows) con tests automatizados." },
+      { name: "node:test", evidence: "Suites de tests unitarios usando el test runner nativo de Node.js." },
+    ],
+  },
 ];
 
 export default function SkillsList() {

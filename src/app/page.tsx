@@ -16,13 +16,13 @@ export default function Home() {
       {/* Bio Section */}
       <section className="space-y-6 pt-4">
         <div className="space-y-2">
-          <h1 className="font-sans text-3xl font-bold tracking-tight">Hernán</h1>
+          <h1 className="font-sans text-3xl font-bold tracking-tight">Hernán Arteaga</h1>
           <p className="text-lg text-foreground font-medium">
             Estudiante de Ingeniería de Sistemas — Universidad de Córdoba, Montería.
           </p>
         </div>
         <p className="text-foreground/80 max-w-2xl leading-relaxed">
-          Trabajo principalmente en el ecosistema JavaScript/TypeScript construyendo aplicaciones full-stack de principio a fin. Me interesa la resolución de problemas de infraestructura, estado, concurrencia de datos y la creación de interfaces técnicas precisas.
+          Estoy en segundo semestre de Ingeniería de Sistemas en la Universidad de Córdoba. Trabajo con TypeScript, React y Node.js construyendo aplicaciones full-stack. Tengo paquetes publicados en npm (agy-mcp, agy-skills), hablo inglés a nivel C1, y busco oportunidades junior o de pasantía.
         </p>
       </section>
 
@@ -42,6 +42,14 @@ export default function Home() {
             description="App móvil con inteligencia artificial conectada a una API REST relacional."
             stack={["React Native", "Node.js", "PostgreSQL"]}
           />
+          <div className="md:col-span-2">
+            <ProjectCard 
+              title="Antigravity CLI Tooling"
+              slug="antigravity-cli"
+              description="Herramientas CLI open-source publicadas en npm para configurar servidores MCP y skills de agentes IA."
+              stack={["Node.js", "npm Registry", "GitHub Actions"]}
+            />
+          </div>
         </div>
       </section>
 
