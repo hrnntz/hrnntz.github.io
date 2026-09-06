@@ -2,10 +2,16 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "PandaAI",
-  description: "Detalles técnicos de PandaAI: App móvil con interacción de voz y backend en Node.js.",
+  title: "PandaAI — Plataforma Interactiva con Voz para Niños",
+  description: "Detalles técnicos de PandaAI: Aplicación móvil con interacción por voz (Groq Whisper, ElevenLabs), control parental y backend en Node.js, Express y PostgreSQL por Hernán Arteaga.",
   alternates: {
-    canonical: '/projects/panda-ai',
+    canonical: "/projects/panda-ai",
+  },
+  openGraph: {
+    title: "PandaAI | Hernán Arteaga",
+    description: "Plataforma interactiva para niños con voz en tiempo real, control parental y backend en Node.js.",
+    url: "https://hrnntz.me/projects/panda-ai",
+    type: "article",
   },
 };
 

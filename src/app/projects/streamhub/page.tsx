@@ -2,10 +2,16 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "StreamHub",
-  description: "Detalles técnicos de StreamHub: Agregador de eventos deportivos en vivo y estadísticas.",
+  title: "StreamHub — Transmisiones Deportivas y Estadísticas en Vivo",
+  description: "Detalles técnicos de StreamHub: Agregador de transmisiones deportivas y marcadores en tiempo real desarrollado con React 19, Supabase y Vercel Edge por Hernán Arteaga.",
   alternates: {
-    canonical: '/projects/streamhub',
+    canonical: "/projects/streamhub",
+  },
+  openGraph: {
+    title: "StreamHub | Hernán Arteaga",
+    description: "Agregador de transmisiones deportivas y marcadores en tiempo real desarrollado con React 19, Supabase y Vercel Edge.",
+    url: "https://hrnntz.me/projects/streamhub",
+    type: "article",
   },
 };
 

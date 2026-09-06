@@ -2,10 +2,16 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Antigravity CLI Tooling",
-  description: "Detalles técnicos de Antigravity CLI Tooling: Herramientas CLI open-source para configurar agentes IA.",
+  title: "Antigravity CLI Tooling — Paquetes Open Source en npm",
+  description: "Detalles técnicos de Antigravity CLI Tooling: Herramientas CLI interactivas publicadas en npm (agy-mcp, agy-skills) para instalar y auditar herramientas de IA con Google OSV por Hernán Arteaga.",
   alternates: {
-    canonical: '/projects/antigravity-cli',
+    canonical: "/projects/antigravity-cli",
+  },
+  openGraph: {
+    title: "Antigravity CLI Tooling | Hernán Arteaga",
+    description: "Herramientas de terminal open-source para instalar y auditar herramientas de IA publicadas en npm.",
+    url: "https://hrnntz.me/projects/antigravity-cli",
+    type: "article",
   },
 };
 
